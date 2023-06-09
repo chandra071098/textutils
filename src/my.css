@@ -1,0 +1,33 @@
+.name{
+    color: red;
+}
+ul .li{
+    border: 2px solid black;
+}
+.para{
+    color: rgb(104, 24, 166);
+}
+.selector{
+    margin: 0px 4px;
+    padding: 10px 10px;
+    border-radius: 100%;
+    border-color: azure;
+}
+#black{
+    background-color: black;
+}
+#white{
+    background-color: white;
+}
+#pink{
+    background-color: pink;
+}
+#grey{
+    background-color: grey;
+}
+.App{
+    text-align: left;
+}
+.navbar-toggler{
+    background-color: whitesmoke;
+}
