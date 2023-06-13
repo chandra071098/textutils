@@ -1,11 +1,11 @@
 import './App.css';
 import React,{useState} from 'react';
 import Navbar from './components/Navbar';
-import About from './components/About';
+// import About from './components/About';
 import './my.css';
 import Textform from './components/Textform';
 import Alert from './components/alert';
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+// import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 function App() {
   const [color, setcolor] = useState('white');
   const [alert, setalert] = useState(null);
@@ -39,14 +39,13 @@ function App() {
   }
   return (
     <div className="App">
-      <Router>
+     
         <Navbar alert={showAlert} color={color} backGroundSelector={setbackGroundcolor} title="Chandra" about='About' />
         <Alert alert={alert}/>
-        <Routes>
-            <Route exact path="about" element={<About color={color}/>}/>
-            <Route exact path="home" element={<Textform alert={showAlert} color={color} heading={"Textutils - Textarea"} />}/>
-        </Routes>
-      </Router>
+
+            {/* <About color={color}/> */}
+            <Textform alert={showAlert} color={color} heading={"Textutils - Textarea"} />
+      
     </div>
   );
 }
